@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="Signup_header">
+          <h1>Signup</h1>
+        </header>
+
+        <main class="signup_body">
+          <form>
+            <div class="form_div">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Type Name Here" id="name" />
+              <i class="fa-solid"></i>
+              <span id="nameErr"></span>
+            </div>
+
+            <div class="form_div">
+              <label for="email">Email</label>
+              <input type="email" placeholder="xyz@gmail.com" id="email" required />
+              <i class="fa-solid"></i>
+              <span id="EmailErr"></span>
+            </div>
+
+            <div class="form_div">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                placeholder="atleast 8 characters"
+                id="password"
+              />
+              <i class="fa-solid"></i>
+              <span id="passErr"></span>
+            </div>
+
+            <div class="form_divSubmit">
+              <input id="submitBTN" type="submit" value="Create Account" />
+            </div>
+          </form>
+        </main>
+
+        <footer class="Signup_footer">
+          <p>Already have an account ? <a href="#">Login</a></p>
+        </footer>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
